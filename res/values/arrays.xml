@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="more_data">
+        <item>My Orders</item>
+        <item>My Credits</item>
+        <item>About Fab</item>
+        <item>Contact Us</item>
+        <item>Shipping</item>
+        <item>Return Policy</item>
+        <item>Stay Signed-in</item>
+        <item>Push Notifications</item>
+    </string-array>
+    <string-array name="browse_dialog_header">
+        <item>Categories</item>
+        <item>Colors</item>
+        <item>Price</item>
+    </string-array>
+    <string-array name="browse_dialog_header_values">
+        <item>Browse our featured categories</item>
+        <item>Browse products by color</item>
+        <item>Browse products by price range</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@id/shareSettigsRow" android:background="@drawable/selector" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fab.views.FabTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/setting" android:layout_width="wrap_content" android:layout_height="64.0dip" android:layout_marginLeft="12.0dip" android:text="Share Setting" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/checkBoxSetting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:button="@drawable/settings_checkbox" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

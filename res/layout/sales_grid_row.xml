@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@id/rel2" android:background="@drawable/backrepeat" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/headerMesh" layout="@layout/list_view_mesh_row" />
+    <ImageView android:id="@id/prodImage" android:background="@color/image_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/sale_image_holder" android:adjustViewBounds="true" android:layout_below="@id/headerMesh" />
+    <ProgressBar android:id="@id/pBar" android:visibility="invisible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerInParent="true" style="?android:progressBarStyleInverse" />
+    <RelativeLayout android:gravity="right" android:id="@id/rel3" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignRight="@id/rel2">
+        <SlidingDrawer android:layout_gravity="left" android:orientation="horizontal" android:id="@id/SlidingDrawer" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="30.0dip" android:handle="@id/slideHandleButton" android:content="@id/tvDuration">
+            <Button android:id="@id/slideHandleButton" android:background="@drawable/drawer_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/prodImage" android:layout_alignRight="@id/rel2" />
+            <com.fab.views.FabTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tvDuration" android:background="@drawable/drawer_text" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:layout_alignBottom="@id/slideHandleButton" />
+        </SlidingDrawer>
+        <ImageView android:id="@id/border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:src="@drawable/drawer_margin" android:layout_toRightOf="@id/SlidingDrawer" android:layout_alignBottom="@id/SlidingDrawer" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rel4" android:background="#60000000" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignBaseline="@id/prodImage" android:layout_alignBottom="@id/prodImage" android:layout_alignWithParentIfMissing="true">
+        <ImageView android:id="@id/circleBtn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/circle_button" android:layout_alignParentRight="true" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/circleBtn" android:layout_alignTop="@id/circleBtn" android:layout_alignBottom="@id/circleBtn" android:layout_alignParentLeft="true">
+            <com.fab.views.FabTextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/tvPrimaryTitle" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Primary Title" android:layout_below="@id/rel3" />
+            <com.fab.views.FabTextView android:textSize="12.0sp" android:textColor="#ffcccccc" android:gravity="center" android:id="@id/tvSecTitle" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Secondary Title" android:layout_below="@id/tvPrimaryTitle" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ribbonView" android:paddingLeft="4.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/rel4" android:layout_alignParentLeft="true">
+        <TextView android:id="@id/triangle" android:background="@drawable/prod_ribbon_triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-2.0dip" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="12.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/type" android:background="@drawable/prod_ribbon" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="POP-UP SHOP" android:layout_toRightOf="@id/triangle" />
+    </RelativeLayout>
+</RelativeLayout>

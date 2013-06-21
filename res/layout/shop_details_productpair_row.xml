@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/row" android:background="@drawable/backrepeat" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.fab.views.ShopProductView android:id="@id/product1" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ProgressBar android:id="@id/pBar1" android:visibility="invisible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerInParent="true" style="?android:progressBarStyleInverse" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.fab.views.ShopProductView android:id="@id/product2" android:paddingRight="7.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ProgressBar android:id="@id/pBar2" android:visibility="invisible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerInParent="true" style="?android:progressBarStyleInverse" />
+    </RelativeLayout>
+</LinearLayout>

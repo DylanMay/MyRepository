@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/listViewHeader" android:background="#ffffffff" android:paddingTop="5.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="8.0dip" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <ImageView android:id="@id/shopIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.fab.views.FabTextView android:textSize="18.0dip" android:textColor="@color/red" android:id="@id/shopName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fashion" android:layout_toRightOf="@id/shopIcon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/infoIconTop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/info_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.fab.views.FabTextView android:textSize="18.0dip" android:textColor="@color/fab_text_color" android:id="@id/shopText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Shop" android:layout_toRightOf="@id/shopName" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/shopDescriptionHolder" android:paddingLeft="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="11.0dip">
+        <WebView android:id="@id/shopDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/infoIconBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/info_icon" android:layout_below="@id/shopDescription" android:layout_alignParentRight="true" />
+        <com.fab.views.FabTextView android:textSize="12.0dip" android:textColor="@color/fab_text_gray_color" android:id="@id/hideText" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:text="Hide info" android:layout_toLeftOf="@id/infoIconBottom" android:layout_alignBottom="@id/infoIconBottom" />
+    </RelativeLayout>
+</LinearLayout>

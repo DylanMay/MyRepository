@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fab.views.FabTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/moreText" android:layout_width="wrap_content" android:layout_height="64.0dip" android:layout_marginLeft="12.0dip" android:text="My Orders" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:src="@drawable/red_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/checkBox1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:button="@drawable/settings_checkbox" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.fab.views.FabTextView android:textSize="17.0sp" android:textColor="#ffe12135" android:id="@id/userName" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="username" android:maxLength="22" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

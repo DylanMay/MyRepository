@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fab_dialog_layout" android:background="@color/fab_dialog_header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/relativeLayout1" android:background="@drawable/fab_dialog_header_bg" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="14.0sp" android:id="@id/dialogLeftButton" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="1.0dip" android:text="Back" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="18.0sp" android:gravity="center_vertical" android:id="@id/dialogTitle" android:paddingLeft="10.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="Browse" android:layout_centerInParent="false" />
+        <Button android:textSize="14.0sp" android:id="@id/dialogRightButton" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginRight="1.0dip" android:text="Cancel" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.fab.views.FixedListView android:id="@id/dialogList" android:background="@color/white" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <GridView android:gravity="center" android:id="@id/dialogGrid" android:background="@color/white" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="6.0dip" android:verticalSpacing="6.0dip" android:stretchMode="columnWidth" android:numColumns="5" />
+    <RelativeLayout android:id="@id/dialogprogressBar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="184.0dip">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" style="?android:progressBarStyleInverse" />
+    </RelativeLayout>
+</LinearLayout>

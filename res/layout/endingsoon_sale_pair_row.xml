@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/headerMesh" layout="@layout/list_view_mesh_row" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/row" android:background="@drawable/backrepeat" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.fab.views.EndingSoonView android:id="@id/sale1" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ProgressBar android:id="@id/pBar1" android:visibility="invisible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerInParent="true" style="?android:progressBarStyleInverse" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.fab.views.EndingSoonView android:id="@id/sale2" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ProgressBar android:id="@id/pBar2" android:visibility="invisible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerInParent="true" style="?android:progressBarStyleInverse" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

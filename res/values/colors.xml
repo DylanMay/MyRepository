@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#ffeeeeee</color>
+    <color name="image_bg">#ffefefef</color>
+    <color name="red">#ffdd0017</color>
+    <color name="input_field">#ff333333</color>
+    <color name="silver">#ff999999</color>
+    <color name="fab_text_color">#ff333333</color>
+    <color name="fab_text_gray_color">#ff666666</color>
+    <color name="inactive_color">#ffc5c5c5</color>
+    <color name="inactive_icon_color">#ffbbbbbb</color>
+    <color name="fab_dialog_header_bg">#ff383838</color>
+    <color name="dialog_subheader_bg">#ffeaeaea</color>
+    <color name="bg_grey">#ffececec</color>
+    <color name="fab_theme_color">#ffffffff</color>
+</resources>

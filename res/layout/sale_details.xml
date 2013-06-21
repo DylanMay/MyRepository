@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fab.views.TitleWidget android:id="@id/titleWidget" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.fab.views.FabTabWidget android:id="@id/tabHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.fab.views.FabTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/tvDuration" android:background="@drawable/red_bar_with_clock" android:paddingLeft="32.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/saleDetailsRel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.fab.views.FixedListView android:id="@id/salesDetailsGrid" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.fab.views.FabTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/timer" android:background="@drawable/timer" android:paddingLeft="23.0dip" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="89.0dip" android:text="11:45" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleInverse" />
+    </RelativeLayout>
+    <com.fab.views.ErrorMessage android:id="@id/error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+</LinearLayout>

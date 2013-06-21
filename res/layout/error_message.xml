@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/error_screen" android:layout_centerHorizontal="true" />
+    <com.fab.views.FabTextView android:textSize="21.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/errorMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Error Message" android:layout_alignBottom="@id/imageView1" android:layout_centerHorizontal="true" />
+    <com.fab.views.FabTextView android:textSize="59.0sp" android:textColor="#ff333333" android:id="@id/oops" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Oops!" android:layout_above="@id/errorMsg" android:layout_centerHorizontal="true" />
+</RelativeLayout>

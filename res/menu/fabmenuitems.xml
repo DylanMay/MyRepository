@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/home" android:id="@id/home" android:visible="false" android:orderInCategory="1" android:title="@string/home" />
+    <item android:icon="@drawable/refresh" android:id="@id/refresh" android:visible="false" android:orderInCategory="2" android:title="@string/refresh" />
+    <item android:icon="@drawable/share" android:id="@id/share" android:visible="false" android:orderInCategory="3" android:title="@string/share">
+        <menu>
+            <item android:id="@id/fb_share" android:visible="false" android:orderInCategory="1" android:title="Share on Facebook" />
+            <item android:id="@id/tweet" android:visible="false" android:orderInCategory="2" android:title="Tweet" />
+            <item android:id="@id/favorite" android:visible="false" android:orderInCategory="3" android:title="Favorite" />
+            <item android:id="@id/email_share" android:visible="false" android:orderInCategory="4" android:title="Email" />
+            <item android:id="@id/sms_share" android:visible="false" android:orderInCategory="5" android:title="SMS" />
+        </menu>
+    </item>
+    <item android:icon="@drawable/shopping_cart" android:id="@id/cart" android:visible="false" android:orderInCategory="4" android:title="@string/cart" />
+    <item android:icon="@drawable/invite" android:id="@id/invite" android:visible="false" android:orderInCategory="5" android:title="@string/invite" />
+    <item android:icon="@drawable/alert_on" android:id="@id/notification" android:visible="false" android:orderInCategory="6" android:title="@string/notification" />
+    <item android:icon="@drawable/more" android:id="@id/more" android:visible="false" android:orderInCategory="7" android:title="@string/more" />
+</menu>

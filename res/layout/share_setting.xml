@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fab.views.TitleWidget android:id="@id/titleWidget" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/shareSettingsTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/titleWidget">
+        <RelativeLayout android:id="@id/buttonHolderSection" android:background="@drawable/shopping_cart_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/titleWidget">
+            <com.fab.views.FabTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="Share Settings" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.fab.views.FixedListView android:id="@id/fbPreferencesList" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/inactive_color" android:dividerHeight="0.100000024dip" android:layout_below="@id/shareSettingsTitle" android:headerDividersEnabled="false" android:footerDividersEnabled="true" />
+    <com.fab.views.FabTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/timer" android:background="@drawable/timer" android:paddingLeft="23.0dip" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="89.0dip" android:text="11:45" android:layout_alignParentBottom="true" />
+    <com.fab.views.ErrorMessage android:id="@id/error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="181.0dip" android:layout_alignTop="@id/fbPreferencesList" android:layout_centerHorizontal="true" style="?android:progressBarStyleInverse" />
+</RelativeLayout>

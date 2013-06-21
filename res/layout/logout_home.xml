@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView android:layout_gravity="center_vertical" android:id="@id/holderView" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="43.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/fabLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/index_logo" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/textContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_below="@id/fabLogo">
+            <com.fab.views.FabTextView android:textSize="35.0sp" android:textColor="@color/silver" android:id="@id/fabText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fab_index_line1" />
+            <com.fab.views.FabTextView android:textSize="35.0sp" android:textStyle="bold" android:textColor="@color/red" android:id="@id/fabText2" android:paddingBottom="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/fabText1" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rel5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="47.0dip" android:layout_below="@id/textContent">
+            <com.fab.views.FabTextView android:textSize="12.0sp" android:textColor="@color/silver" android:id="@id/fabText8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Free - Instant access for mobile users" />
+        </RelativeLayout>
+        <com.fab.views.FabButton android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/viewSales" android:background="@drawable/grey_btn_full" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:text="View Sales" android:layout_below="@id/rel5" />
+        <com.fab.views.FabButton android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/register" android:background="@drawable/red_button_full" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:text="Sign In or Register" android:layout_below="@id/viewSales" />
+        <com.fab.views.FabButton android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/fbConnect" android:background="@drawable/fb_connect_home" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="37.0dip" android:text="@string/fb_login" android:layout_below="@id/register" />
+        <ProgressBar android:id="@id/pBar" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/viewSales" android:layout_alignBottom="@id/viewSales" style="?android:progressBarStyleSmall" />
+    </RelativeLayout>
+</ScrollView>

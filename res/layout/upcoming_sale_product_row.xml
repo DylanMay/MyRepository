@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/saleRow" android:background="@drawable/selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.5dip">
+        <ImageView android:id="@id/productImage" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/upcoming_product_blank" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/upcoming_nextarrow" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <RelativeLayout android:gravity="top" android:id="@id/rel2" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/productImage" android:layout_alignTop="@id/productImage" android:layout_alignRight="@id/arrow" android:layout_alignBottom="@id/productImage" android:layout_centerInParent="true">
+            <com.fab.views.FabTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/fab_text_color" android:id="@id/saleName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:text="TextView" android:layout_alignParentLeft="true" />
+            <com.fab.views.FabTextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/saleDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/saleName" android:layout_alignLeft="@id/saleName" android:layout_alignRight="@id/saleName" />
+        </RelativeLayout>
+        <ImageView android:gravity="center" android:id="@id/imageView1" android:background="@drawable/separator" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/rel2" />
+        <ProgressBar android:id="@id/pBar" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="14.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="?android:progressBarStyleInverse" />
+    </RelativeLayout>
+</LinearLayout>
